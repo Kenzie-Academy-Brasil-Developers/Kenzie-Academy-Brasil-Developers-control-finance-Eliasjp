@@ -75,7 +75,7 @@ function createLiEntry (checkIndex){
             
         let imgTrashButton = document.createElement(`img`)
             imgTrashButton.classList = `imgTrashButton`
-            imgTrashButton.src = `.../assets/trash.svg`
+            imgTrashButton.src = `assets/trash.svg`
 
         let ul = document.querySelector(`.valueList`)
 
