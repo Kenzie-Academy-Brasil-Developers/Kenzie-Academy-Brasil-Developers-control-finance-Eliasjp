@@ -1,0 +1,47 @@
+.values {
+    margin: 0px 16px;
+    margin-top: 28px;
+}
+
+ul {
+    list-style: none;
+}
+
+.containerLi {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border: 1.5px solid var(--color-grey-5);
+    border-radius: var(--radius-1);
+    background-color: var(--white-fixed);
+}
+
+.liDetails {
+    width: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divType {
+    width: 68px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family-1);
+    background-color: var(--color-grey-4);  
+    border-radius: var(--radius-2);
+    padding: 7px 14px;
+}
+
+.trashButton {
+    height: 26px;
+    padding: 0px 8px;
+    background-color: var(--color-grey-5);
+    border: 1,5 solid var(--color-grey-5);
+    border-radius: var(--radius-2);
+}

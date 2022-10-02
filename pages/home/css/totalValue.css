@@ -1,0 +1,11 @@
+.totalValue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    margin: 28px 16px 0px 16px;
+    padding: 14px 16px;
+    background-color: var(--color-grey-5);
+    border: 1.5px solid var(--color-grey-4);
+    border-radius: var(--radius-1);
+}

@@ -1,0 +1,20 @@
+/* Header */
+.siteHeader {
+    width: 100%;
+    background-color: var(--color-grey-5);
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 16px;
+}
+
+.p-brand-1 {
+    color: var(--color-brand-1)
+}
+
+.newValue {
+    height: 32px;
+    margin-top: 20px;
+}

@@ -1,0 +1,138 @@
+.modalBg {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: var(--color-grey-1-opacity-5);
+}
+
+.modalDiv {
+    max-width: 100%;
+    margin: 0px 16px;
+    padding: 24px;
+    border-radius: var(--radius-1);
+    background-color: var(--fixed-white);
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeModal {
+    background-color: var(--color-grey-5);
+    border: none;
+    border-radius: var(--radius-2);
+    padding: 4px 12px;
+    color: var(--color-grey-2);
+    font-size: 16px;
+    font-weight: var(--font-weight-1);
+    font-family: var(--font-family-2);
+}
+
+.descriptionModal {
+    margin-top: 25px;
+}
+
+.modalDiv > form {
+    margin-top: 25px;
+}
+
+.valueSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.valueInput {
+    height: 44px;
+    margin-top: 8px;
+    padding: 0px 16px;
+    background-color: var(--fixed-white);
+    border: 1.5px solid var(--color-grey-3);
+    border-radius: var(--radius-1);
+}
+
+.valueInput::placeholder {
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-3);
+    font-family: var(--font-family-1);
+    color: var(--color-grey-2);
+}
+
+/* Section Input Radio */
+
+.typeSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.radioInput {
+    display: none;
+}
+
+.typeLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-1);
+    border: 1.5px solid var(--color-grey-5);
+    height: 32px;
+    font-size: 14px;
+    font-weight: var(--font-weight-1);
+    font-family: var(--font-family-1);
+}
+
+.entryLabel {
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.exitLabel {
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.radioInput:checked + .entryLabel {
+    color: var(--color-brand-1);
+    border-color: var(--color-brand-1);
+    background-color: var(--color-brand-3);
+}
+
+.radioInput:checked + .exitLabel {
+    color: var(--color-brand-1);
+    border-color: var(--color-brand-1);
+    background-color: var(--color-brand-3);
+}
+
+/* Cancel & Send Buttons */
+
+.cancelSend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28px;
+    gap: 16px;
+}
+
+.cancelButton {
+    width: 100%;
+    background-color: var(--color-grey-4);
+    border: 1.5px solid var(--color-grey-4);
+    border-radius: var(--radius-1);
+    padding: 7px 14px;
+    color: var(--color-grey-2);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-1);
+    font-family: var(--font-family-1);
+}
+
+.sendButton {
+    width: 100%;
+    padding: 7px 14px;
+}

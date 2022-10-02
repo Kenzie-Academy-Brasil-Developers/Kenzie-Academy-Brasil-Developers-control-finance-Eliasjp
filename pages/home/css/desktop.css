@@ -1,0 +1,45 @@
+@media (min-width: 768px) {
+    .siteHeader {
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .headerContainer {
+        width: 688px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .newValue {
+        margin-top: 0px;
+        padding: 0px 14px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 688px;   
+    }
+
+    .summary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 688px;
+    }
+
+    .summaryButtons {
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .modalDiv {
+        margin: 0 auto;
+    }
+}
+  

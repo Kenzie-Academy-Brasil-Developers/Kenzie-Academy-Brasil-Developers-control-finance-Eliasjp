@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Control Finance</title>
+
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+        <meta name="description" content="Control Finance - Seu controle financeiro">
+
+        <!-- CSS Global -->
+
+        <link rel="stylesheet" href="styles/globalStyles.css">
+
+        <link rel="stylesheet" href="styles/titles.css">
+
+        <link rel="stylesheet" href="styles/buttons.css">
+
+        <link rel="stylesheet" href="styles/text.css">
+
+        <!-- CSS Local -->
+        
+        <link rel="stylesheet" href="pages/home/css/header.css">
+        
+        <link rel="stylesheet" href="pages/home/css/summary.css">
+
+        <link rel="stylesheet" href="pages/home/css/totalValue.css">
+    
+        <link rel="stylesheet" href="pages/home/css/addNewValue.css">
+
+        <link rel="stylesheet" href="pages/home/css/valuesList.css">
+
+        <link rel="stylesheet" href="pages/home/css/desktop.css">
+
+        <!-- Javascripts -->
+        
+        <script defer src="scripts/modal.js"></script>
+
+        <script defer src="pages/home/js/valuesData.js"></script>
+
+        <script defer src="pages/home/js/summaryDOM.js"></script>
+        
+        <script defer src="pages/home/js/addNewValue.js"></script>
+        
+        <script defer src="pages/home/js/sendNewValue.js"></script>
+        
+        <script defer src="pages/home/js/readValues.js"></script>
+        
+        <script defer src="pages/home/js/totalValue.js"></script>
+
+        <script defer src="pages/home/js/removeLi.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="siteHeader">
+            <div class="headerContainer">
+                <h1><span class="p-brand-1">Control</span> Finance</h1>
+                
+                <button class="newValue purpleButtonStyle">Registrar novo valor</button>
+            </div>
+        </header>
+        
+        
+        <main id="app" class="container">
+
+            <section class="summary">
+                <h2>Resumo financeiro</h2>
+
+                <div class="summaryButtons">
+                </div>
+            </section>
+
+            <section class="totalValue">
+                <p>Soma dos valores</p>
+            </section>
+
+            <section class="values">
+                <ul class="valueList"></ul>
+            </section>
+            
+        </main>
+        
+    </body>
+
+</html>

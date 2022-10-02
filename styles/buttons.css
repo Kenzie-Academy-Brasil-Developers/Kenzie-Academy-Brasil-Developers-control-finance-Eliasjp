@@ -1,0 +1,32 @@
+button {
+    cursor: pointer;
+}
+
+.purpleButtonStyle {
+    background-color: var(--color-brand-1); 
+    border-radius: var(--radius-1);
+    border: 1.5px solid var(--color-brand-1);
+    color: var(--fixed-white);
+    font-size: var(--font-size-3);
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-1);
+}
+  
+.summaryButtonStyle {
+    height: 32px;
+    padding: 0px 14px;
+    color: var(--color-grey-2);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-1);
+    font-family: var(--font-family-1);
+    border: 1.5px solid var(--color-grey-5);
+    border-radius: var(--radius-1);
+    cursor: pointer;
+}
+  
+.summaryButtonSelected {
+    color: var(--color-brand-1);
+    background-color: var(--color-brand-3);
+    border: 1.5px solid var(--color-brand-1);
+    border-radius: var(--radius-1);
+}
