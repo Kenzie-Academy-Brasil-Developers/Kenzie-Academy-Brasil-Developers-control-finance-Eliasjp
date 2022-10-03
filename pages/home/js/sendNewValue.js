@@ -1,15 +1,25 @@
 function sendNewValue (){
     let queryButton = document.querySelector(`.sendButton`)
     let queryModalBg = document.querySelector(`.modalBg`)
-
     queryButton.addEventListener(`click`, (e) => {
+    if (checkIndex == 0){
         e.preventDefault()
         valuesArray ()
         checkIndex++
         removeLi ()
+        // teste ()
         callList(querySummnaryButtons)
         queryModalBg.remove()
-    })
+    }else {
+        e.preventDefault()
+        valuesArray ()
+        checkIndex++
+        removeLi ()
+        // teste ()
+        callList(querySummnaryButtons)
+        queryModalBg.remove()
+    }
+})
 }
 
 function valuesArray (){
@@ -72,6 +82,7 @@ function createLiEntry (checkIndex){
 
         let trashButton = document.createElement(`button`)
             trashButton.classList = `trashButton`
+            trashButton.id = `tButton${idCount}`
             
         let imgTrashButton = document.createElement(`img`)
             imgTrashButton.classList = `imgTrashButton`
@@ -110,6 +121,7 @@ function createLiExit (){
 
         let trashButton = document.createElement(`button`)
             trashButton.classList = `trashButton`
+            trashButton.id = `tButton${idCount}`
             
         let imgTrashButton = document.createElement(`img`)
             imgTrashButton.classList = `imgTrashButton`

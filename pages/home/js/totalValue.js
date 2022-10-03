@@ -13,8 +13,14 @@ function reduceValue (querySummnaryButtons){
         if (element.classList.contains(`summaryButtonSelected`)){
             const queryTotalValue = document.querySelector(`.reducedValue`)
             if (element.innerHTML.toUpperCase() == `TODOS`){
-                if (allValue.length){
-                    queryTotalValue.innerHTML = `R$: ${allValue.reduce((total, value) => total + value).toFixed(2)}`
+                if (entryValue.length && exitValue.length){
+                    let entryMinusExit = entryValue.reduce((total, value) => total + value) - exitValue.reduce((total, value) => total + value)
+                    queryTotalValue.innerHTML = `R$: ${entryMinusExit.toFixed(2)}`
+                }
+                if (entryValue.length && !exitValue.length){
+                    queryTotalValue.innerHTML = `R$: ${entryValue.reduce((total, value) => total + value).toFixed(2)}`
+                }else if (exitValue.length && !entryValue.length){
+                    queryTotalValue.innerHTML = `R$: ${exitValue.reduce((total, value) => total + value).toFixed(2)}`
                 }else if (!allValue.length){
                     queryTotalValue.innerHTML = `R$: 00.00`
                 }
